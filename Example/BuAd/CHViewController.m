@@ -8,10 +8,8 @@
 
 #import "CHViewController.h"
 #import "BuAdManager.h"
-#import "MBProgressHUD.h"
 #import <BUAdSDK/BURewardedVideoAd.h>
 #import <BUAdSDK/BURewardedVideoModel.h>
-#import <Masonry/Masonry.h>
 
 @interface CHViewController ()<BURewardedVideoAdDelegate>
 
@@ -27,8 +25,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.adShowBtn];
     [self initBuAd];
-    [self initUI];
 }
 
 - (void)initBuAd{
@@ -38,24 +37,13 @@
     [self.rewardedVideoAd loadAdData];
 }
 
-- (void)initUI{
-    [self.adShowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.view.mas_left).offset(60);
-        make.right.mas_equalTo(self.view.mas_right).offset(-60);
-        make.centerY.mas_equalTo(self.view.mas_centerY);
-        make.height.mas_equalTo(50);
-    }];
-}
 
 #pragma mark - BURewardedVideoAdDelegate
 
 - (void)rewardedVideoAdDidLoad:(BURewardedVideoAd *)rewardedVideoAd {
     NSLog(@"%s",__func__);
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeText;
-    hud.offset = CGPointMake(0, -100);
-    hud.label.text = @"reawrded data load success";
-    [hud hideAnimated:YES afterDelay:0.2];
+    [self.adShowBtn setTitle:@"广告加载完成" forState:UIControlStateNormal];
+    self.adShowBtn.backgroundColor = [UIColor redColor];
 }
 
 - (void)rewardedVideoAdVideoDidLoad:(BURewardedVideoAd *)rewardedVideoAd {
@@ -106,10 +94,11 @@
 - (UIButton *)adShowBtn{
     if (!_adShowBtn) {
         _adShowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _adShowBtn.frame = CGRectMake(20, 200, 280 , 50);
+        _adShowBtn.center = self.view.center;
         _adShowBtn.backgroundColor = [UIColor blueColor];
-        [_adShowBtn setTitle:@"show Ad" forState:UIControlStateNormal];
+        [_adShowBtn setTitle:@"显示广告" forState:UIControlStateNormal];
         [_adShowBtn addTarget:self action:@selector(showAd) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:_adShowBtn];
     }
     return _adShowBtn;
 }
