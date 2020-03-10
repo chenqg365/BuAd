@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.author           = { 'chenqg' => 'chenqg3721@163.com' }
   s.source           = { :git => 'https://github.com/chenqg365/BuAd.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'BuAd/Classes/**/*'
   s.vendored_frameworks = 'BuAd/BUAdSDK.framework'
   s.resources = ['BuAd/*.{bundle}']
   s.ios.frameworks = 'StoreKit', 'MobileCoreServices', 'WebKit', 'MediaPlayer', 'CoreMedia', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'SystemConfiguration', 'AdSupport', 'CoreMotion', 'Accelerate'
