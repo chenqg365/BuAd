@@ -23,6 +23,23 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A31FEAA6A5690D6CECE53871 /* Pods_BuAd_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495380BBF4DB743BD49B6BB6 /* Pods_BuAd_Example.framework */; };
+		B082B3ED241744DF004012F1 /* BuAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B082B3EC241744DF004012F1 /* BuAdManager.m */; };
+		B0A75DC92416539E0075B8AF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DC82416539E0075B8AF /* StoreKit.framework */; };
+		B0A75DCB241653AA0075B8AF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DCA241653AA0075B8AF /* MobileCoreServices.framework */; };
+		B0A75DCD241653B40075B8AF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DCC241653B40075B8AF /* WebKit.framework */; };
+		B0A75DCF241653BF0075B8AF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DCE241653BF0075B8AF /* MediaPlayer.framework */; };
+		B0A75DD1241653C90075B8AF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DD0241653C90075B8AF /* CoreMedia.framework */; };
+		B0A75DD3241653D30075B8AF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DD2241653D30075B8AF /* CoreLocation.framework */; };
+		B0A75DD5241653DA0075B8AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DD4241653DA0075B8AF /* AVFoundation.framework */; };
+		B0A75DD7241653E80075B8AF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DD6241653E80075B8AF /* CoreTelephony.framework */; };
+		B0A75DD9241653F00075B8AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DD8241653F00075B8AF /* SystemConfiguration.framework */; };
+		B0A75DDA241653F60075B8AF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DC42416520A0075B8AF /* AdSupport.framework */; };
+		B0A75DDC241654030075B8AF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DDB241654030075B8AF /* CoreMotion.framework */; };
+		B0A75DDE2416540C0075B8AF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DDD2416540C0075B8AF /* Accelerate.framework */; };
+		B0A75DE02416541B0075B8AF /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DDF2416541B0075B8AF /* libresolv.9.tbd */; };
+		B0A75DE1241654230075B8AF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DC6241652330075B8AF /* libc++.tbd */; };
+		B0A75DE32416542F0075B8AF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DE22416542F0075B8AF /* libz.tbd */; };
+		B0A75DE52416543A0075B8AF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A75DE42416543A0075B8AF /* libsqlite3.tbd */; };
 		B638E148922BD35B015072D1 /* Pods_BuAd_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352C70D0A046340B2794ACB6 /* Pods_BuAd_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		1277281191FE65A4B1D70384 /* Pods-BuAd_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuAd_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BuAd_Tests/Pods-BuAd_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D6B63F62E76A9DED3985932 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2D6B63F62E76A9DED3985932 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		352C70D0A046340B2794ACB6 /* Pods_BuAd_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuAd_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		495380BBF4DB743BD49B6BB6 /* Pods_BuAd_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuAd_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* BuAd_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuAd_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,9 +80,27 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC1C71934A67938789D166E6 /* Pods-BuAd_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuAd_Example.release.xcconfig"; path = "Target Support Files/Pods-BuAd_Example/Pods-BuAd_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BC246801BDC0732224A5917A /* BuAd.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BuAd.podspec; path = ../BuAd.podspec; sourceTree = "<group>"; };
+		B082B3EB241744DF004012F1 /* BuAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuAdManager.h; sourceTree = "<group>"; };
+		B082B3EC241744DF004012F1 /* BuAdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuAdManager.m; sourceTree = "<group>"; };
+		B0A75DC42416520A0075B8AF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B0A75DC6241652330075B8AF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B0A75DC82416539E0075B8AF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B0A75DCA241653AA0075B8AF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B0A75DCC241653B40075B8AF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B0A75DCE241653BF0075B8AF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B0A75DD0241653C90075B8AF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B0A75DD2241653D30075B8AF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B0A75DD4241653DA0075B8AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B0A75DD6241653E80075B8AF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B0A75DD8241653F00075B8AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B0A75DDB241654030075B8AF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B0A75DDD2416540C0075B8AF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B0A75DDF2416541B0075B8AF /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		B0A75DE22416542F0075B8AF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B0A75DE42416543A0075B8AF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BC246801BDC0732224A5917A /* BuAd.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BuAd.podspec; path = ../BuAd.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CC69D393BBB0F3E7D2026F9D /* Pods-BuAd_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuAd_Tests.release.xcconfig"; path = "Target Support Files/Pods-BuAd_Tests/Pods-BuAd_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E59A625CF75F4DF10A47F845 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E59A625CF75F4DF10A47F845 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EF151015D25B9F0E8793BFD6 /* Pods-BuAd_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuAd_Example.debug.xcconfig"; path = "Target Support Files/Pods-BuAd_Example/Pods-BuAd_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +109,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A75DE52416543A0075B8AF /* libsqlite3.tbd in Frameworks */,
+				B0A75DE32416542F0075B8AF /* libz.tbd in Frameworks */,
+				B0A75DE1241654230075B8AF /* libc++.tbd in Frameworks */,
+				B0A75DE02416541B0075B8AF /* libresolv.9.tbd in Frameworks */,
+				B0A75DDE2416540C0075B8AF /* Accelerate.framework in Frameworks */,
+				B0A75DDC241654030075B8AF /* CoreMotion.framework in Frameworks */,
+				B0A75DDA241653F60075B8AF /* AdSupport.framework in Frameworks */,
+				B0A75DD9241653F00075B8AF /* SystemConfiguration.framework in Frameworks */,
+				B0A75DD7241653E80075B8AF /* CoreTelephony.framework in Frameworks */,
+				B0A75DD5241653DA0075B8AF /* AVFoundation.framework in Frameworks */,
+				B0A75DD3241653D30075B8AF /* CoreLocation.framework in Frameworks */,
+				B0A75DD1241653C90075B8AF /* CoreMedia.framework in Frameworks */,
+				B0A75DCF241653BF0075B8AF /* MediaPlayer.framework in Frameworks */,
+				B0A75DCD241653B40075B8AF /* WebKit.framework in Frameworks */,
+				B0A75DCB241653AA0075B8AF /* MobileCoreServices.framework in Frameworks */,
+				B0A75DC92416539E0075B8AF /* StoreKit.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -103,7 +154,6 @@
 				1277281191FE65A4B1D70384 /* Pods-BuAd_Tests.debug.xcconfig */,
 				CC69D393BBB0F3E7D2026F9D /* Pods-BuAd_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +181,22 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0A75DE42416543A0075B8AF /* libsqlite3.tbd */,
+				B0A75DE22416542F0075B8AF /* libz.tbd */,
+				B0A75DDF2416541B0075B8AF /* libresolv.9.tbd */,
+				B0A75DDD2416540C0075B8AF /* Accelerate.framework */,
+				B0A75DDB241654030075B8AF /* CoreMotion.framework */,
+				B0A75DD8241653F00075B8AF /* SystemConfiguration.framework */,
+				B0A75DD6241653E80075B8AF /* CoreTelephony.framework */,
+				B0A75DD4241653DA0075B8AF /* AVFoundation.framework */,
+				B0A75DD2241653D30075B8AF /* CoreLocation.framework */,
+				B0A75DD0241653C90075B8AF /* CoreMedia.framework */,
+				B0A75DCE241653BF0075B8AF /* MediaPlayer.framework */,
+				B0A75DCC241653B40075B8AF /* WebKit.framework */,
+				B0A75DCA241653AA0075B8AF /* MobileCoreServices.framework */,
+				B0A75DC82416539E0075B8AF /* StoreKit.framework */,
+				B0A75DC6241652330075B8AF /* libc++.tbd */,
+				B0A75DC42416520A0075B8AF /* AdSupport.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -146,6 +212,8 @@
 			children = (
 				6003F59C195388D20070C39A /* CHAppDelegate.h */,
 				6003F59D195388D20070C39A /* CHAppDelegate.m */,
+				B082B3EB241744DF004012F1 /* BuAdManager.h */,
+				B082B3EC241744DF004012F1 /* BuAdManager.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CHViewController.h */,
 				6003F5A6195388D20070C39A /* CHViewController.m */,
@@ -208,7 +276,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				B3F70F9A9644E8B94279E711 /* [CP] Embed Pods Frameworks */,
+				FC187A9FDDE823E68CBF5EC4 /* [CP] Copy Pods Resources */,
+				CC2E02942EA00CCD8125B131 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +327,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,22 +409,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B3F70F9A9644E8B94279E711 /* [CP] Embed Pods Frameworks */ = {
+		CC2E02942EA00CCD8125B131 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BuAd_Example/Pods-BuAd_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BuAd/BuAd.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BuAd.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BuAd_Example/Pods-BuAd_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC187A9FDDE823E68CBF5EC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuAd_Example/Pods-BuAd_Example-resources.sh",
+				"${PODS_ROOT}/../../BuAd/BUAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BuAd_Example/Pods-BuAd_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -367,6 +457,7 @@
 				6003F59E195388D20070C39A /* CHAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CHViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				B082B3ED241744DF004012F1 /* BuAdManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

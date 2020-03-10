@@ -8,35 +8,19 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BuAd'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BuAd.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.version          = '1.0'
+  s.summary          = '头条广告'
+  s.description      = "头条广告集成"
   s.homepage         = 'https://github.com/chenqg365/BuAd'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chenqg365' => 'chenqg3721@163.com' }
+  s.author           = { 'chenqg' => 'chenqg3721@163.com' }
   s.source           = { :git => 'https://github.com/chenqg365/BuAd.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'BuAd/Classes/**/*'
+  s.vendored_frameworks = 'BuAd/BUAdSDK.framework'
+  s.resources = ['BuAd/*.{bundle}']
+  s.ios.frameworks = 'StoreKit', 'MobileCoreServices', 'WebKit', 'MediaPlayer', 'CoreMedia', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'SystemConfiguration', 'AdSupport', 'CoreMotion', 'Accelerate'
   
-  # s.resource_bundles = {
-  #   'BuAd' => ['BuAd/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.libraries = "resolv.9","c++","z","sqlite3"
+  
 end

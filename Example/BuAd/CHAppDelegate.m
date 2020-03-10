@@ -7,12 +7,15 @@
 //
 
 #import "CHAppDelegate.h"
+#import "BuAdManager.h"
+#import <BUAdSDK/BUAdSDKManager.h>
 
 @implementation CHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [BUAdSDKManager setAppID:[BuAdManager appKey]];
     return YES;
 }
 

@@ -1,0 +1,6 @@
+framework module BuAd {
+  umbrella header "BuAd-umbrella.h"
+
+  export *
+  module * { export * }
+}

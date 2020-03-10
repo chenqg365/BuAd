@@ -1,0 +1,48 @@
+{
+  "name": "BuAd",
+  "version": "1.0",
+  "summary": "头条广告",
+  "description": "头条广告集成",
+  "homepage": "https://github.com/chenqg365/BuAd",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chenqg": "chenqg3721@163.com"
+  },
+  "source": {
+    "git": "https://github.com/chenqg365/BuAd.git",
+    "tag": "1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BuAd/Classes/**/*",
+  "vendored_frameworks": "BuAd/BUAdSDK.framework",
+  "resources": [
+    "BuAd/*.{bundle}"
+  ],
+  "ios": {
+    "frameworks": [
+      "StoreKit",
+      "MobileCoreServices",
+      "WebKit",
+      "MediaPlayer",
+      "CoreMedia",
+      "CoreLocation",
+      "CoreTelephony",
+      "AVFoundation",
+      "SystemConfiguration",
+      "AdSupport",
+      "CoreMotion",
+      "Accelerate"
+    ],
+    "libraries": [
+      "resolv.9",
+      "c++",
+      "z",
+      "sqlite3"
+    ]
+  }
+}
