@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.description      = "头条广告集成"
   s.homepage         = 'https://github.com/chenqg365/BuAd'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chenqg' => 'chenqg3721@163.com' }
-  s.source           = { :git => 'https://github.com/chenqg365/BuAd.git', :tag => s.version.to_s }
+  s.author           = { 'heng66' => 'chenqg3721@gmail.com' }
+  s.source           = { :git => 'https://github.com/heng66/BuAd.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks = 'BuAd/BUAdSDK.framework'
   s.resources = ['BuAd/*.{bundle}']
